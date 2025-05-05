@@ -2,9 +2,9 @@
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen bg-white overflow-hidden">
+    <div className="flex flex-col w-full max-w-[768px] mx-auto h-screen bg-white overflow-hidden">
   {/* Left - SVG Map */}
-  <div className="w-full md:w-full h-[60vh] md:h-full">
+  <div className="w-full md:w-1/2 h-[60vh] md:h-full">
     <svg
       viewBox="0 0 1500 900"
       className="w-full h-full"
@@ -77,11 +77,11 @@ const Dashboard = () => {
   </div>
 
   {/* Right - Labels */}
-  <div className="w-full md:w-1/4 h-[40vh] md:h-full bg-gray-50 px-4 py-6 overflow-y-auto">
+  <div className="w-full md:w-1/2 h-[40vh] md:h-full bg-gray-50 px-4 py-6 overflow-y-auto">
   <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 text-left">
     Map Legend
   </h2>
-  <div className="flex flex-col gap-3 text-gray-800 text-sm">
+  <div className="grid grid-cols-2 gap-3 text-gray-800 text-sm">
     {[
       { name: "Lobby", color: "bg-[#000000]" },
       { name: "Training Building", color: "bg-[#5ce1e6]" },
