@@ -23,7 +23,7 @@ const Lobby = () => {
 
       {/* Image */}
       <Image 
-        src="/lobby.png" 
+        src="/lobby.jpeg" 
         alt="Lobby Image" 
         width={600} 
         height={400} 
