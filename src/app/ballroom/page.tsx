@@ -33,7 +33,7 @@ const Ballroom = () => {
       {/* Description */}
       <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
          The ballroom at JTLC is a spacious and elegant venue designed for events, ceremonies, and large gatherings. 
-         It's equipped to host formal occasions, conferences, and celebrations, providing a versatile environment for memorable experiences.
+         It&apos;s equipped to host formal occasions, conferences, and celebrations, providing a versatile environment for memorable experiences.
         </p>
     </div>
   );
