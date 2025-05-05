@@ -151,7 +151,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
 };
 
 // Sidebar Link Component
-const SidebarLink = ({ href, icon: Icon, label }: { href: string; icon?: any; label: string }) => {
+const SidebarLink = ({ href, icon: Icon, label }: { href: string; icon?: React.ElementType; label: string }) => {
   return (
     <Link href={href}>
       <div className="flex items-center gap-3 px-4 py-2 transition-colors cursor-pointer hover:bg-blue-100">
