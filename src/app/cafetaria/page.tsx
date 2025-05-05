@@ -33,7 +33,7 @@ const Cafetaria = () => {
       {/* Description */}
         <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
             The cafeteria at JTLC offers a comfortable space for students, staff, and visitors to enjoy meals and take breaks. 
-            With a variety of food and beverage options, it's a central spot for dining and socializing between activities.
+            With a variety of food and beverage options, it&apos;s a central spot for dining and socializing between activities.
         </p>
     </div>
   );

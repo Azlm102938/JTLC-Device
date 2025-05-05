@@ -4,10 +4,7 @@ import React, { useState } from "react";
 import { 
   Menu, Layout, 
   ChevronDown, ChevronUp, Building2, ParkingCircle, Utensils,
-  CircleSmall, Minus, Bed, Sofa, Bell, MoonStar,
-  Microscope,
-  User,
-  Toilet,
+  CircleSmall, Minus, Bed, Sofa, MoonStar,
   Projector,
   Dribbble,
   Presentation,
