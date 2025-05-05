@@ -2,7 +2,7 @@
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col w-full max-w-[768px] mx-auto h-screen bg-white overflow-hidden">
+    <div className="flex flex-col md:flex-row w-full h-screen bg-white overflow-hidden">
   {/* Left - SVG Map */}
   <div className="w-full md:w-1/2 h-[60vh] md:h-full">
     <svg
