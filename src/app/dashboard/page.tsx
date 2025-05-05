@@ -98,7 +98,8 @@ const Dashboard = () => {
       { name: "Mosque", color: "bg-[#ffde59]" },
       { name: "Parking Area", color: "bg-[#ff7a00]" },
       { name: "Sport Center", color: "bg-[#0ed837]" },
-      { name: "Courtyard", color: "bg-[#d9d9d9]" },
+      { name: "Courtyard", color: "bg-[#5e17eb]" },
+      { name: "Amphitheater", color: "bg-[#d9d9d9]" },
     ].map(({ name, color }) => (
       <div key={name} className="flex items-center gap-2">
         <span className={`inline-block w-3 h-3 rounded-full ${color}`}></span>
