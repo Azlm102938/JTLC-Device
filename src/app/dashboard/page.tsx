@@ -19,12 +19,12 @@ const Dashboard = () => {
         </rect>
       </a>
       <a href="/trainingbuilding">
-        <rect x="945" y="510" width="110" height="60" fill="transparent" rx="5" ry="5">
+        <rect x="950" y="510" width="110" height="60" fill="transparent" rx="5" ry="5">
           <title>Training Building</title>
         </rect>
       </a>
       <a href="/cafetaria">
-        <rect x="890" y="435" width="170" height="70" fill="transparent" rx="5" ry="5">
+        <rect x="880" y="425" width="70" height="75" fill="transparent" rx="5" ry="5">
           <title>Cafetaria</title>
         </rect>
       </a>
@@ -39,12 +39,12 @@ const Dashboard = () => {
         </rect>
       </a>
       <a href="/auditorium">
-        <rect x="830" y="505" width="70" height="85" fill="transparent" rx="5" ry="5">
+        <rect x="825" y="505" width="65" height="80" fill="transparent" rx="5" ry="5">
           <title>Auditorium</title>
         </rect>
       </a>
       <a href="/ballroom">
-        <rect x="945" y="360" width="115" height="70" fill="transparent" rx="5" ry="5">
+        <rect x="950" y="350" width="110" height="75" fill="transparent" rx="5" ry="5">
           <title>Ballroom</title>
         </rect>
       </a>
@@ -68,9 +68,14 @@ const Dashboard = () => {
           <title>Sport Center</title>
         </rect>
       </a>
-      <a href="/utility">
-        <rect x="795" y="325" width="100" height="70" fill="transparent" rx="5" ry="5">
-          <title>Utility</title>
+      <a href="/courtyard">
+        <rect x="953" y="430" width="105" height="70" fill="transparent" rx="5" ry="5">
+          <title>Courtyard</title>
+        </rect>
+      </a>
+      <a href="/amphitheater">
+        <rect x="895" y="510" width="50" height="75" fill="transparent" rx="5" ry="5">
+          <title>Amphitheater</title>
         </rect>
       </a>
     </svg>
@@ -93,7 +98,7 @@ const Dashboard = () => {
       { name: "Mosque", color: "bg-[#ffde59]" },
       { name: "Parking Area", color: "bg-[#ff7a00]" },
       { name: "Sport Center", color: "bg-[#0ed837]" },
-      { name: "Utility", color: "bg-[#5e17eb]" },
+      { name: "Courtyard", color: "bg-[#d9d9d9]" },
     ].map(({ name, color }) => (
       <div key={name} className="flex items-center gap-2">
         <span className={`inline-block w-3 h-3 rounded-full ${color}`}></span>
@@ -101,7 +106,7 @@ const Dashboard = () => {
       </div>
     ))}
   </div>
-  <div className="mt-4 text-xs text-gray-500">
+  <div className="mt-4 text-xs text-gray-500 align-text-bottom">
     <p>Click on the map to navigate to different sections.</p>
   </div>
 </div>

@@ -23,8 +23,8 @@ const Parking = () => {
 
       {/* Image */}
       <Image 
-        src="/parking.png" 
-        alt="Parking Image" 
+        src="westParking.png" 
+        alt="WestParking Image" 
         width={600} 
         height={400} 
         className="rounded-lg shadow-lg mb-6 transition-transform duration-200 hover:scale-105"

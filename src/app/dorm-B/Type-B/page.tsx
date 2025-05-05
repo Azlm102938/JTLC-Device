@@ -18,12 +18,12 @@ const DormBB = () => {
 
       {/* Page Title */}
       <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-        DORMITORY B - TYPE A
+        DORMITORY B - TYPE B
       </h1>
 
       {/* Image */}
       <Image 
-        src="/dormB.png"  // Update this to the correct path to the Classroom 1 image
+        src="/dormB-B.png"  // Update this to the correct path to the Classroom 1 image
         alt="Dorm B Image" 
         width={600} 
         height={400} 

@@ -23,7 +23,7 @@ const DormBA = () => {
 
       {/* Image */}
       <Image 
-        src="/dormB.png"  // Update this to the correct path to the Classroom 1 image
+        src="/dormB-A.png"  // Update this to the correct path to the Classroom 1 image
         alt="Dorm B Image" 
         width={600} 
         height={400} 
