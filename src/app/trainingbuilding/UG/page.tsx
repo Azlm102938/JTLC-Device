@@ -8,13 +8,13 @@ const UpperGround = () => {
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
-      <div className="absolute bottom-6 left-6  flex flex-col items-center text-black group">
+      <div className="absolute bottom-18 left-6  flex flex-col items-center text-black group">
         <Link href="/trainingbuilding" className="flex flex-col items-center">
           <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
             <ArrowLeft className="w-6 h-6" />
           </div>
         </Link>
-        <span className="ml-2 text-sm font-semibold">Back</span>
+        <span className="mt-1 text-sm font-semibold">Back</span>
       </div>
 
       {/* Title */}

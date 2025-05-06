@@ -14,7 +14,7 @@ const FrontOffice = () => {
             <ArrowLeft className="w-6 h-6" />
           </div>
         </Link>
-        <span className="ml-2 text-sm font-semibold text-center">Back</span>
+        <span className="text-sm font-semibold text-center mt-1">Back</span>
       </div>
 
       {/* Page Title */}
