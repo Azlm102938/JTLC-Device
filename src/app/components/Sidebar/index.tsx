@@ -8,7 +8,6 @@ import {
   Projector,
   Dribbble,
   Presentation,
-  Zap,
   Theater,
   Trees
 } from "lucide-react";
@@ -150,7 +149,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
                 title="Parking Area" 
                 isExpanded={isParkingExpanded} 
                 toggleExpand={() => setIsParkingExpanded(!isParkingExpanded)}
-                icon={() => <CircleSmall className="w-4 h-4 text-gray-700" />}
+                icon={() => <ParkingCircle className="w-5 h-5 text-gray-700" />}
               >
                 {isParkingExpanded && (
                   <div className="pl-6">
