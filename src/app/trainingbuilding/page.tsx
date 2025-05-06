@@ -18,10 +18,10 @@ const TrainingBuilding = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-10">TRAINING BUILDING</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">TRAINING BUILDING</h1>
 
       {/* Buttons */}
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {/* LG Button */}
         <Link
           href="/trainingbuilding/LG"

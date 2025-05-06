@@ -18,10 +18,10 @@ const LowerGround = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-10">LOWER GROUND</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">LOWER GROUND</h1>
 
       {/* Buttons */}
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {/* LG-Classroom-1 */}
         <Link
           href="/trainingbuilding/LG/classroom1"

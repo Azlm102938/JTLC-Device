@@ -53,12 +53,12 @@ const Dashboard = () => {
           <title>Mosque</title>
         </rect>
       </a>
-      <a href="/parking">
+      <a href="/eastparking">
         <rect x="640" y="190" width="230" height="100" fill="transparent" rx="5" ry="5">
           <title>Parking Area</title>
         </rect>
       </a>
-      <a href="/parking">
+      <a href="/westparking">
         <rect x="310" y="445" width="240" height="120" fill="transparent" rx="5" ry="5">
           <title>Parking Area</title>
         </rect>
@@ -102,7 +102,7 @@ const Dashboard = () => {
       { name: "Amphitheater", color: "bg-[#d9d9d9]" },
     ].map(({ name, color }) => (
       <div key={name} className="flex items-center gap-2">
-        <span className={`inline-block w-3 h-3 rounded-full ${color}`}></span>
+        <span className={`inline-block w-5  h-5 rounded-full ${color}`}></span>
         <span className="text-xs md:text-sm">{name}</span>
       </div>
     ))}

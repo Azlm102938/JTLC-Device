@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-const Parking = () => {
+const EastParking = () => {
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
@@ -23,8 +23,8 @@ const Parking = () => {
 
       {/* Image */}
       <Image 
-        src="westParking.png" 
-        alt="WestParking Image" 
+        src="/eastParking.png" 
+        alt="EastParking Image" 
         width={600} 
         height={400} 
         className="rounded-lg shadow-lg mb-6 transition-transform duration-200 hover:scale-105"
@@ -39,4 +39,4 @@ const Parking = () => {
   );
 };
 
-export default Parking;
+export default EastParking;
