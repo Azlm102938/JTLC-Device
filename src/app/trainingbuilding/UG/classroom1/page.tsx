@@ -7,14 +7,15 @@ import { ArrowLeft } from "lucide-react";
 const UGClassroom1 = () => {
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
-      {/* Back Button */}
-      <div className="absolute top-4 left-12">
-        <Link href="/trainingbuilding/UG" className="flex items-center text-black group">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-      </div>
+    {/* Back Button */}
+    <div className="absolute bottom-6 left-6  flex flex-col items-center text-black group">
+      <Link href="/trainingbuilding/UG" className="flex flex-col items-center">
+        <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
+          <ArrowLeft className="w-6 h-6" />
+        </div>
+      </Link>
+      <span className="ml-2 text-sm font-semibold">Back</span>
+    </div>
 
       {/* Page Title */}
       <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">

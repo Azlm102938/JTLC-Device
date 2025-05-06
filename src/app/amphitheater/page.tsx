@@ -8,7 +8,7 @@ const Amphitheater = () => {
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
-      <div className="absolute top-6 left-12">
+      <div className="absolute bottom-6 left-6">
         <Link href="/dashboard" className="flex items-center text-black group">
           <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
             <ArrowLeft className="w-6 h-6" />

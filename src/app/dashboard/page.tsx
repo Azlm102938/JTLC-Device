@@ -82,14 +82,14 @@ const Dashboard = () => {
   </div>
 
   {/* Right - Labels */}
-  <div className="w-full md:w-1/5 h-[40vh] md:h-full bg-gray-50 px-4 py-6 overflow-y-auto">
+  <div className="w-full md:w-1/5 h-[40vh] md:h-full bg-white px-4 py-6 overflow-y-auto">
   <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 text-left">
     Map Legend
   </h2>
   <div className="grid grid-cols-2 gap-3 text-gray-800 text-sm">
     {[
       { name: "Lobby", color: "bg-[#000000]" },
-      { name: "Training Building", color: "bg-[#5ce1e6]" },
+      { name: "Training Building (Classroom, Front Office)", color: "bg-[#5ce1e6]" },
       { name: "Cafetaria", color: "bg-[#c1ff72]" },
       { name: "Dormitory A", color: "bg-[#ff0f00]" },
       { name: "Dormitory B", color: "bg-[#cb6ce6]" },
