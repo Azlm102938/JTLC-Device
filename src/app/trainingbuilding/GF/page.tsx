@@ -30,7 +30,7 @@ const GroundFloor = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/frontoffice.png"
+              src="/frontOffice.png"
               alt="Front Office"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"

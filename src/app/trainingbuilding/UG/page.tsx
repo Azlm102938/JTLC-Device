@@ -18,10 +18,10 @@ const UpperGround = () => {
       </div>
 
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-10">UPPER GROUND</h1>
+      <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">UPPER GROUND</h1>
 
       {/* Buttons */}
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         {/* LG-Classroom-1 */}
         <Link
           href="/trainingbuilding/UG/classroom1"
@@ -54,7 +54,7 @@ const UpperGround = () => {
             />
           </div>
           <div className="w-full h-1/5 flex items-center justify-center bg-white">
-            <span className="text-xl font-semibold text-gray-800">LG-CLASSROOM-2</span>
+            <span className="text-xl font-semibold text-gray-800">UG-CLASSROOM-2</span>
           </div>
         </Link>
 
@@ -90,7 +90,7 @@ const UpperGround = () => {
             />
           </div>
           <div className="w-full h-1/5 flex items-center justify-center bg-white">
-            <span className="text-xl font-semibold text-gray-800">UG-CLASSROOM-2</span>
+            <span className="text-xl font-semibold text-gray-800">UG-CLASSROOM-4</span>
           </div>
         </Link>
       </div>
