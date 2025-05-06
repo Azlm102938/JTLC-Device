@@ -29,7 +29,7 @@ const DORMB = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/dormB.png"
+              src="/dormB-A.png"
               alt="Dorm B"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"
@@ -47,7 +47,7 @@ const DORMB = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/dormB.png"
+              src="/dormB-B.png"
               alt="Dorm B"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"
@@ -65,7 +65,7 @@ const DORMB = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/dormB.png"
+              src="/dormB-C.png"
               alt="Dorm B"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"

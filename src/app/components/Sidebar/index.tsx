@@ -8,7 +8,9 @@ import {
   Projector,
   Dribbble,
   Presentation,
-  Zap
+  Zap,
+  Theater,
+  Trees
 } from "lucide-react";
 import Link from "next/link";
 
@@ -21,6 +23,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
   const [isTrainingBuildingExpanded, setIsTrainingBuildingExpanded] = useState(false);
   const [isDormitoriesExpanded, setIsDormitoriesExpanded] = useState(false);
   const [isDormBExpanded, setIsDormBExpanded] = useState(false);
+  const [isParkingExpanded, setIsParkingExpanded] = useState(false);
 
   // Separate state for each floor
   const [isLGExpanded, setIsLGExpanded] = useState(false);
@@ -109,6 +112,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
             </CollapsibleSection>
 
             <SidebarLink href="/cafetaria" icon={Utensils} label="Cafetaria" />
+            <SidebarLink href="/courtyard" icon={Trees} label="Courtyard" />
 
             {/* Dormitories (Collapsible) */}
             <CollapsibleSection 
@@ -140,9 +144,24 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
             <SidebarLink href="/auditorium" icon={Projector} label="Auditorium" />
             <SidebarLink href="/ballroom" icon={Presentation} label="Ballroom" />
             <SidebarLink href="/mosque" icon={MoonStar} label="Mosque" />
-            <SidebarLink href="/parking" icon={ParkingCircle} label="Parking" />
+            
+            {/* Parking Collapsible) */}
+            <CollapsibleSection 
+                title="Parking Area" 
+                isExpanded={isParkingExpanded} 
+                toggleExpand={() => setIsParkingExpanded(!isParkingExpanded)}
+                icon={() => <CircleSmall className="w-4 h-4 text-gray-700" />}
+              >
+                {isParkingExpanded && (
+                  <div className="pl-6">
+                    <SidebarLink href="/eastparking" icon={Minus} label="East Parking" />
+                    <SidebarLink href="/westparking" icon={Minus} label="West Parking" />
+                  </div>
+                )}
+              </CollapsibleSection>
+
             <SidebarLink href="/sportcenter" icon={Dribbble} label="Sport Center"/>
-            <SidebarLink href="/utility" icon={Zap} label="Utility" />
+            <SidebarLink href="/amphitheater" icon={Theater} label="Amphitheater" />
           </nav>
         </div>
       </div>
