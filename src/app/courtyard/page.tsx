@@ -16,7 +16,7 @@ const CourtYard = () => {
         </Link>
         <span className="mt-1 text-sm font-semibold">Back</span>
       </div>
-      
+
       {/* Page Title */}
       <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
         COURTYARD
