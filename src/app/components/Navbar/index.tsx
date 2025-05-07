@@ -18,7 +18,7 @@ const Navbar = ({ toggleSidebar }: NavbarProps) => {
       {/* Centered Title */}
       <div className="absolute left-1/2 transform -translate-x-1/2 text-center">
         <h2 className="text-base sm:text-lg md:text-xs font-semibold text-black whitespace-nowrap">
-          Welcome to Japfa The Learning Centre!
+          welcome to Japfa The Learning Centre!
         </h2>
       </div>
 
