@@ -104,8 +104,8 @@ const Dashboard = () => {
       { name: "Amphitheater", color: "#d9d9d9" },
     ].map(({ name, color }) => (
       <div key={name} className="flex items-center gap-2">
-        <MapPin className="w-4 h-4" fill={color} stroke={color} />
-        <span className="text-xs md:text-sm">{name}</span>
+        <MapPin className="w-6 h-6" fill={color} stroke={color} />
+        <span className="text-s md:text-sm">{name}</span>
       </div>
     ))}
   </div>
