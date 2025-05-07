@@ -1,5 +1,7 @@
 'use client';
 
+import { MapPin } from "lucide-react";
+
 const Dashboard = () => {
   return (
     <div className="flex flex-col md:flex-row w-full h-screen bg-white overflow-hidden">
@@ -88,21 +90,21 @@ const Dashboard = () => {
   </h2>
   <div className="grid grid-cols-2 gap-3 text-gray-800 text-sm">
     {[
-      { name: "Lobby", color: "bg-[#000000]" },
-      { name: "Training Building (Classroom, Front Office)", color: "bg-[#5ce1e6]" },
-      { name: "Cafetaria", color: "bg-[#c1ff72]" },
-      { name: "Dormitory A", color: "bg-[#ff0f00]" },
-      { name: "Dormitory B", color: "bg-[#cb6ce6]" },
-      { name: "Auditorium", color: "bg-[#737373]" },
-      { name: "Ballroom", color: "bg-[#ff66c4]" },
-      { name: "Mosque", color: "bg-[#ffde59]" },
-      { name: "Parking Area", color: "bg-[#ff7a00]" },
-      { name: "Sport Center", color: "bg-[#0ed837]" },
-      { name: "Courtyard", color: "bg-[#5e17eb]" },
-      { name: "Amphitheater", color: "bg-[#d9d9d9]" },
+      { name: "Lobby", color: "#000000" },
+      { name: "Training Building (Classroom, Front Office)", color: "#5ce1e6" },
+      { name: "Cafetaria", color: "#c1ff72" },
+      { name: "Dormitory A", color: "#ff0f00" },
+      { name: "Dormitory B", color: "#cb6ce6" },
+      { name: "Auditorium", color: "#737373" },
+      { name: "Ballroom", color: "#ff66c4" },
+      { name: "Mosque", color: "#ffde59" },
+      { name: "Parking Area", color: "#ff7a00" },
+      { name: "Sport Center", color: "#0ed837" },
+      { name: "Courtyard", color: "#5e17eb" },
+      { name: "Amphitheater", color: "#d9d9d9" },
     ].map(({ name, color }) => (
       <div key={name} className="flex items-center gap-2">
-        <span className={`inline-block w-5  h-5 rounded-full ${color}`}></span>
+        <MapPin className="w-4 h-4" fill={color} stroke={color} />
         <span className="text-xs md:text-sm">{name}</span>
       </div>
     ))}
