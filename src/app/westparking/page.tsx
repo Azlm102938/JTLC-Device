@@ -1,10 +1,35 @@
 'use client';
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 
 const WestParking = () => {
+  const router = useRouter();
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Fungsi untuk mereset timer
+  const resetTimer = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      router.push("/dashboard");
+    }, 60000); // 60 detik
+  };
+
+  useEffect(() => {
+    const events = ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'];
+
+    events.forEach((event) => window.addEventListener(event, resetTimer));
+    resetTimer(); // Jalankan pertama kali saat komponen dimount
+
+    return () => {
+      events.forEach((event) => window.removeEventListener(event, resetTimer));
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
@@ -32,10 +57,10 @@ const WestParking = () => {
       />
 
       {/* Description */}
-        <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
-            The parking area at JTLC provides a secure and spacious location for vehicles of staff, students, and visitors. 
-            Designed for easy access and organized layout, it ensures smooth traffic flow and convenient entry to the main building.
-        </p>
+      <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
+        The parking area at JTLC provides a secure and spacious location for vehicles of staff, students, and visitors. 
+        Designed for easy access and organized layout, it ensures smooth traffic flow and convenient entry to the main building.
+      </p>
     </div>
   );
 };
