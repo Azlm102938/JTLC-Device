@@ -101,24 +101,6 @@ const LowerGround = () => {
             <span className="text-xl font-semibold text-gray-800">LG-CLASSROOM-3</span>
           </div>
         </Link>
-
-        {/* Teacher Room */}
-        <Link
-          href="/trainingbuilding/LG/teacherRoom"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
-        >
-          <div className="relative w-full h-4/5">
-            <Image
-              src="/teacherRoom.png"
-              alt="Teacher Room"
-              fill
-              className="object-cover transition duration-300 group-hover:opacity-90"
-            />
-          </div>
-          <div className="w-full h-1/5 flex items-center justify-center bg-white">
-            <span className="text-xl font-semibold text-gray-800">Teacher Room</span>
-          </div>
-        </Link>
       </div>
     </div>
   );
