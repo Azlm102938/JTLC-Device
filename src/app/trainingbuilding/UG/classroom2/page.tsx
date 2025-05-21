@@ -51,7 +51,7 @@ const UGClassroom2 = () => {
 
       {/* Image */}
       <Image 
-        src="/classroom.png"  // Update this to the correct path to the Classroom 1 image
+        src="/UG2.png"  // Update this to the correct path to the Classroom 1 image
         alt="Classroom Image" 
         width={600} 
         height={400} 

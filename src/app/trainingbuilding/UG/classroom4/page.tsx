@@ -2,9 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 
 const UGClassroom4 = () => {
 
@@ -61,6 +61,7 @@ const UGClassroom4 = () => {
       <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
         Classroom is a modern learning space equipped with digital whiteboards, projectors, and comfortable seating. It is used for various training sessions and academic programs conducted at JTLC.
       </p>
+
     </div>
   );
 };

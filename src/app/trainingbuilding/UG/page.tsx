@@ -56,7 +56,7 @@ const UpperGround = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/classroom.png"
+              src="/UG1.png"
               alt="Classroom"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"
@@ -74,7 +74,7 @@ const UpperGround = () => {
         >
           <div className="relative w-full h-4/5">
             <Image
-              src="/classroom.png"
+              src="/UG2.png"
               alt="Classroom"
               fill
               className="object-cover transition duration-300 group-hover:opacity-90"

@@ -50,7 +50,7 @@ const Cafetaria = () => {
 
       {/* Image */}
       <Image 
-        src="/cafetaria.JPG" 
+        src="/cafetaria.png" 
         alt="Cafetaria Image" 
         width={600} 
         height={400} 
