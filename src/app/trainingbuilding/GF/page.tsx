@@ -123,7 +123,7 @@ const GroundFloor = () => {
 
         {/* Teacher Room */}
         <Link
-          href="/trainingbuilding/LG/teacherRoom"
+          href="/trainingbuilding/GF/teacherRoom"
           className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
