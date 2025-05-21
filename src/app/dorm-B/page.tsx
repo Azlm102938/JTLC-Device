@@ -84,7 +84,7 @@ const DORMB = () => {
           </div>
         </Link>
 
-        {/* UG Button */}
+        {/* Type C Button */}
         <Link
           href="/dorm-B/Type-C"
           className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
@@ -99,6 +99,24 @@ const DORMB = () => {
           </div>
           <div className="w-full h-1/5 flex items-center justify-center bg-white">
             <span className="text-xl font-semibold text-gray-800">Type C</span>
+          </div>
+        </Link>
+
+        {/* Pool Button */}
+        <Link
+          href="/dorm-B/swimmingPool"
+          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+        >
+          <div className="relative w-full h-4/5">
+            <Image
+              src="/pool.png"
+              alt="Swimming Pool"
+              fill
+              className="object-cover transition duration-300 group-hover:opacity-90"
+            />
+          </div>
+          <div className="w-full h-1/5 flex items-center justify-center bg-white">
+            <span className="text-xl font-semibold text-gray-800">Swimming Pool</span>
           </div>
         </Link>
       </div>
