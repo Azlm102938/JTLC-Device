@@ -4,7 +4,11 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { useInactivityTimer } from "@/app/components/Timer";
 
-const DirectionPage = ({ title = "Direction" }: { title?: string }) => {
+type Props = {
+  title?: string;
+};
+
+const OnProgress = ({ title = "Direction" }: Props) => {
   useInactivityTimer("/dashboard", 60000);
 
   return (
@@ -19,7 +23,7 @@ const DirectionPage = ({ title = "Direction" }: { title?: string }) => {
         <span className="text-sm font-semibold">Back</span>
       </div>
 
-      {/* Moved lower with margin-top */}
+      {/* Moved lower */}
       <div className="mt-32 flex flex-col items-center">
         <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
           {title}
@@ -34,4 +38,4 @@ const DirectionPage = ({ title = "Direction" }: { title?: string }) => {
   );
 };
 
-export default DirectionPage;
+export default OnProgress;
