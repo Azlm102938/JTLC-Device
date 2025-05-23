@@ -1,36 +1,13 @@
 'use client';
 
-import { useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useInactivityTimer } from "@/app/components/Timer";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const TrainingBuilding = () => {
-      const router = useRouter();
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  // Fungsi untuk mereset timer
-  const resetTimer = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = setTimeout(() => {
-      router.push("/dashboard");
-    }, 60000); // 60 detik
-  };
-
-  useEffect(() => {
-    const events = ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'];
-
-    events.forEach((event) => window.addEventListener(event, resetTimer));
-    resetTimer(); // Jalankan pertama kali saat komponen dimount
-
-    return () => {
-      events.forEach((event) => window.removeEventListener(event, resetTimer));
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, []);
-
-  
+  useInactivityTimer();
+   
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
@@ -99,6 +76,42 @@ const TrainingBuilding = () => {
           </div>
           <div className="w-full h-1/5 flex items-center justify-center bg-white">
             <span className="text-xl font-semibold text-gray-800">UPPER GROUND</span>
+          </div>
+        </Link>
+
+        {/* Auditorium Button */}
+        <Link
+          href="/trainingbuilding/auditorium"
+          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+        >
+          <div className="relative w-full h-4/5">
+            <Image
+              src="/auditorium.png"
+              alt="Auditorium"
+              fill
+              className="object-cover transition duration-300 group-hover:opacity-90"
+            />
+          </div>
+          <div className="w-full h-1/5 flex items-center justify-center bg-white">
+            <span className="text-xl font-semibold text-gray-800">AUDITORIUM</span>
+          </div>
+        </Link>
+
+        {/* Amphitheater Button */}
+        <Link
+          href="/trainingbuilding/amphitheater"
+          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+        >
+          <div className="relative w-full h-4/5">
+            <Image
+              src="/amphitheater.png"
+              alt="Amphitheater"
+              fill
+              className="object-cover transition duration-300 group-hover:opacity-90"
+            />
+          </div>
+          <div className="w-full h-1/5 flex items-center justify-center bg-white">
+            <span className="text-xl font-semibold text-gray-800">AMPHITHEATER</span>
           </div>
         </Link>
       </div>
