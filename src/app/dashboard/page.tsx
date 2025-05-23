@@ -189,25 +189,50 @@ const Dashboard = () => {
         </h2>
         <div className="grid grid-cols-2 gap-3 text-gray-800 text-sm">
           {[
-          { name: "Lobby", color: "#ff0f00" },
+          { name: ( 
+            <>
+              <span className="font-semibold">Lobby</span>
+            </> ),color: "#ff0f00" },
           {
             name: (
               <>
                 <span className="font-semibold">Training Building</span>
                 <br />
                 <span className="text-xs text-gray-600">(Front office, classroom, auditorium, etc)</span>
-              </>
-            ),
-            color: "#000000"
+              </>),color: "#000000"
           },
-          { name: "Cafetaria", color: "#c1ff72" },
-          { name: "Dormitory A", color: "#5ce1e6" },
-          { name: "Dormitory B", color: "#cb6ce6" },
-          { name: "Ballroom", color: "#ff66c4" },
-          { name: "Mosque", color: "#ffde59" },
-          { name: "Parking Area", color: "#ff7a00" },
-          { name: "Sport Center", color: "#0ed837" },
-          { name: "Courtyard", color: "#5e17eb" },
+          { name: (
+            <>
+              <span className="font-semibold">Cafetaria</span>
+            </> ),color: "#c1ff72" },
+          { name: ( 
+            <>
+              <span className="font-semibold">Dormitory A</span>
+            </> ), color: "#5ce1e6" },
+          { name: (
+            <>
+              <span className="font-semibold">Ballroom</span>
+            </> ), color: "#ff66c4" },
+          { name: (
+            <>
+              <span className="font-semibold">Dormitory B</span>
+            </> ), color: "#cb6ce6" },
+          { name: (
+            <>
+              <span className="font-semibold">Mosque</span>
+            </> ), color: "#ffde59" },
+          { name: (
+            <>
+              <span className="font-semibold">Parking Area</span>
+            </> ), color: "#ff7a00" },
+          { name: (
+            <>
+              <span className="font-semibold">Sport Center</span>
+            </> ), color: "#0ed837" },
+          { name: (
+            <>
+              <span className="font-semibold">Courtyard</span>
+            </> ), color: "#5e17eb" },
         ].map(({ name, color }, index) => (
           <div key={index} className="flex items-start gap-2">
             <MapPin className="w-6 h-6 mt-1" fill={color} stroke={color} />

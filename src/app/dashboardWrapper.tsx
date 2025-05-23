@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
+import Botbar from "./components/Botbar";
 import Sidebar from "./components/Sidebar";
 // import { SessionProvider } from "next-auth/react";
 
@@ -16,9 +17,9 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="relative flex h-screen">
       {/* Main Content */}
       <main className="flex flex-col w-full h-full bg-gray-50 transition-all duration-300">
-        {/* <Navbar toggleSidebar={toggleSidebar} /> */}
+        <Navbar />
         {children}
-        <Navbar toggleSidebar={toggleSidebar} />
+        <Botbar toggleSidebar={toggleSidebar} />
       </main>
 
       {/* Sidebar */}
