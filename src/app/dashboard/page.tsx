@@ -189,22 +189,31 @@ const Dashboard = () => {
         </h2>
         <div className="grid grid-cols-2 gap-3 text-gray-800 text-sm">
           {[
-            { name: "Lobby", color: "#ff0f00" },
-            { name: "Training Building (Classroom, Front Office, Auditorium, Amphitheater)", color: "#000000" },
-            { name: "Cafetaria", color: "#c1ff72" },
-            { name: "Dormitory A", color: "#5ce1e6" },
-            { name: "Dormitory B", color: "#cb6ce6" },
-            { name: "Ballroom", color: "#ff66c4" },
-            { name: "Mosque", color: "#ffde59" },
-            { name: "Parking Area", color: "#ff7a00" },
-            { name: "Sport Center", color: "#0ed837" },
-            { name: "Courtyard", color: "#5e17eb" },
-          ].map(({ name, color }) => (
-            <div key={name} className="flex items-center gap-2">
-              <MapPin className="w-6 h-6" fill={color} stroke={color} />
-              <span className="text-s md:text-sm">{name}</span>
-            </div>
-          ))}
+          { name: "Lobby", color: "#ff0f00" },
+          {
+            name: (
+              <>
+                <span className="font-semibold">Training Building</span>
+                <br />
+                <span className="text-xs text-gray-600">(Front office, classroom, auditorium, etc)</span>
+              </>
+            ),
+            color: "#000000"
+          },
+          { name: "Cafetaria", color: "#c1ff72" },
+          { name: "Dormitory A", color: "#5ce1e6" },
+          { name: "Dormitory B", color: "#cb6ce6" },
+          { name: "Ballroom", color: "#ff66c4" },
+          { name: "Mosque", color: "#ffde59" },
+          { name: "Parking Area", color: "#ff7a00" },
+          { name: "Sport Center", color: "#0ed837" },
+          { name: "Courtyard", color: "#5e17eb" },
+        ].map(({ name, color }, index) => (
+          <div key={index} className="flex items-start gap-2">
+            <MapPin className="w-6 h-6 mt-1" fill={color} stroke={color} />
+            <span className="text-sm leading-snug">{name}</span>
+          </div>
+        ))}
         </div>
         <div className="mt-4 text-xs text-gray-500">
           <p>Click on the map to navigate to different sections.</p>
