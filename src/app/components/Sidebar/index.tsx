@@ -140,7 +140,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
             </CollapsibleSection>
                             
               {/* Other Links */}
-            <SidebarLink href="/auditorium" icon={Projector} label="Auditorium" />
+            <SidebarLink href="/trainingbuilding/auditorium" icon={Projector} label="Auditorium" />
             <SidebarLink href="/ballroom" icon={Presentation} label="Ballroom" />
             <SidebarLink href="/mosque" icon={MoonStar} label="Mosque" />
             
@@ -160,7 +160,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
               </CollapsibleSection>
 
             <SidebarLink href="/sportcenter" icon={Dribbble} label="Sport Center"/>
-            <SidebarLink href="/amphitheater" icon={Theater} label="Amphitheater" />
+            <SidebarLink href="/trainingbuilding/amphitheater" icon={Theater} label="Amphitheater" />
           </nav>
         </div>
       </div>
