@@ -10,7 +10,6 @@ interface BotbarProps {
 const Botbar = ({ toggleSidebar }: BotbarProps) => {
   return (
     <nav className="fixed bottom-0 left-0 flex items-center justify-between px-4 py-3 bg-white shadow border-t w-full h-16 z-50">
-
       {/* Logo (Left)   */}
       <div className="flex items-center">
         <img src="/logojapfa.png" alt="Japfa Logo" className="h-8 w-auto" />

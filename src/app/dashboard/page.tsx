@@ -102,6 +102,7 @@ const Dashboard = () => {
           viewBox="0 0 1500 900"
           className="w-full h-full"
           preserveAspectRatio="xMidYMid meet"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <image href="/JTLC.png" x="0" y="0" width="100%" height="100%" />
           {places.map(({ name, x, y, width, height }) => (
