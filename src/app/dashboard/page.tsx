@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Navbar from "../components/Navbar";
 
 // Place coordinates and keys must match placeDetails
 const places = [
@@ -92,13 +93,15 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col md:flex-row w-full h-screen bg-white overflow-hidden">
+      <div className="w-full fixed top-0 z-30">
+        <Navbar />
+      </div>
       {/* SVG Map */}
       <div className="w-full md:w-4/5 h-[60vh] md:h-full relative">
         <svg
           viewBox="0 0 1500 900"
           className="w-full h-full"
           preserveAspectRatio="xMidYMid meet"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <image href="/JTLC.png" x="0" y="0" width="100%" height="100%" />
           {places.map(({ name, x, y, width, height }) => (
