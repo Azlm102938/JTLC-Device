@@ -5,13 +5,13 @@ import BackButton from "@/app/components/backButton";
 
 export default function Page() {
   return (
-    <div className="relative min-h-screen px-4 py-6">
+    <div className="relative min-h-screen px-4 py-6 bg-white">
       <BackButton href="/dashboard" />
 
-      {/* Header Text */}
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
-        RESEARCH
-      </h1>
+      {/* Header Text*/}
+      {/* <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
+        TITLE
+      </h1> */}
 
       <DirectionPage title="Direction" />
     </div>
