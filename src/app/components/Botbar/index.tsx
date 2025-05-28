@@ -3,7 +3,7 @@
 import React from "react";
 import { Menu } from "lucide-react";
 
-interface BotbarProps {
+interface BotbarProps { 
   toggleSidebar: () => void;
 }
 
