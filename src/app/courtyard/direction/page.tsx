@@ -1,7 +1,7 @@
 'use client';
 
 import DirectionPage from "@/app/components/onProgress";
-import BackButton from "@/app/components/BackButton";
+import BackButton from "@/app/components/backButton";
 
 export default function Page() {
   return (
@@ -10,7 +10,7 @@ export default function Page() {
 
       {/* Header Text */}
       <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
-        Courtyard
+        COURTYARD
       </h1>
 
       <DirectionPage title="Direction" />
