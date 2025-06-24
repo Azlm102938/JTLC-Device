@@ -9,7 +9,7 @@ import {
   Dribbble,
   Presentation,
   Theater,
-  Trees
+  Trees,FenceIcon
 } from "lucide-react";
 import Link from "next/link";
 
@@ -142,6 +142,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }: SidebarProps) => {
               {/* Other Links */}
             <SidebarLink href="/trainingbuilding/auditorium" icon={Projector} label="Auditorium" />
             <SidebarLink href="/ballroom" icon={Presentation} label="Ballroom" />
+            <SidebarLink href="/entranceGate" icon={FenceIcon} label="Entrance Gate" />
             <SidebarLink href="/mosque" icon={MoonStar} label="Mosque" />
             
             {/* Parking Collapsible) */}

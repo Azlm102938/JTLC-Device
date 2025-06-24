@@ -15,6 +15,7 @@ const places = [
   { name: "dorm-B", x: 780, y: 510, width: 350, height: 145 },
   { name: "ballroom", x: 930, y: 315, width: 160, height: 60 },
   { name: "mosque", x: 300, y: 265, width: 130, height: 85 },
+  { name: "entranceGate", x: 20, y: 270, width: 65, height: 65 },
   { name: "eastparking", x: 665, y: 245, width: 170, height: 70 },
   { name: "westparking", x: 215, y: 415, width: 275, height: 80 },
   { name: "sportcenter", x: 235, y: 510, width: 235, height: 110 },
@@ -50,6 +51,10 @@ const placeDetails: Record<string, { name: string; image: string }> = {
   "mosque": {
     name: "Mosque",
     image: "/mosque1.png",
+  },
+  "entranceGate": {
+    name: "Entrance Gate",
+    image: "/entrance1.png",
   },
   "eastparking": {
     name: "Parking",
@@ -221,6 +226,10 @@ const Dashboard = () => {
             <>
               <span className="font-semibold">Dormitory B</span>
             </> ), color: "#cb6ce6" },
+          { name: (
+            <>
+              <span className="font-semibold">Entrance Gate</span>
+            </> ), color: "#a44f30" },  
           { name: (
             <>
               <span className="font-semibold">Mosque</span>
