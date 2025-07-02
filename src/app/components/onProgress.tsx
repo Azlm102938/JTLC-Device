@@ -9,20 +9,10 @@ type Props = {
 };
 
 const OnProgress = ({ title = "Direction" }: Props) => {
-  useInactivityTimer("/dashboard", 60000);
+  // useInactivityTimer("/dashboard", 60000);
 
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
-      {/* Back Button */}
-      <div className="absolute bottom-150 left-10 flex flex-col items-center text-black group">
-        <Link href="/dashboard" className="flex flex-col items-center">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-        <span className="text-sm font-semibold">Back</span>
-      </div>
-
       {/* Moved lower */}
       <div className="mt-32 flex flex-col items-center">
         <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">

@@ -97,12 +97,12 @@ const Dashboard = () => {
   }, [selectedPlace]);
 
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen bg-white overflow-hidden">
-      <div className="w-full fixed top-0 z-30">
+    <div className="flex flex-col md:flex-row w-full min-h-screen bg-white">
+      {/* <div className="w-full fixed top-0 z-30">
         <Navbar />
-      </div>
+      </div> */}
       {/* SVG Map */}
-      <div className="w-full md:w-4/5 h-[60vh] md:h-full relative">
+      <div className="w-full md:w-4/5 relative">
         <svg
           viewBox="0 0 1500 900"
           className="w-full h-full"
@@ -158,11 +158,11 @@ const Dashboard = () => {
                   <img
                     src={placeDetails[selectedPlace].image}
                     alt={placeDetails[selectedPlace].name}
-                    className="w-full h-32 object-cover rounded mb-4"
+                    className="w-full h-32 object-cover rounded"
                   />
                 )}
 
-                <div className="flex flex-col gap-1.5">
+                <div className="flex flex-col gap-1">
                   {selectedPlace !== "lobby" && (
                   <button
                     className="bg-white text-black font-semibold px-4 py-2 rounded"
@@ -192,7 +192,8 @@ const Dashboard = () => {
       </div>
 
       {/* Map Legend */}
-      <div className="w-full md:w-1/5 h-[40vh] md:h-full bg-white px-4 py-6 overflow-y-auto">
+      <div className="w-full md:w-1/5 bg-white px-4 py-6">
+
         <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 text-left">
           Map Legend
         </h2>

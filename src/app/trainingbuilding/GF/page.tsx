@@ -6,26 +6,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 const GroundFloor = () => {
-  useInactivityTimer();
+  // useInactivityTimer();
   
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
-      {/* Back Button */}
-      <div className="absolute bottom-45 left-6  flex flex-col items-center text-black group">
-        <Link href="/trainingbuilding" className="flex flex-col items-center">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-        <span className="text-sm font-semibold">Back</span>
-      </div>
-
       {/* Title */}
       <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">GROUND FLOOR</h1>
 
       {/* Buttons in a row with wrap */}
-      <div className="flex flex-wrap justify-center items-center gap-6">
-
+      <div className="grid grid-cols-2 gap-6">
         {/* Front Office */}
         <Link
           href="/trainingbuilding/GF/frontoffice"

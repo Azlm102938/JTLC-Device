@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Botbar from "./components/Botbar";
 import Sidebar from "./components/Sidebar";
-// import { SessionProvider } from "next-auth/react";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(true);
@@ -14,22 +13,18 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="relative flex h-screen">
-      {/* Main Content */}
-      <main className="flex flex-col w-full h-full bg-gray-50 transition-all duration-300">
-        {children}
-        <Botbar toggleSidebar={toggleSidebar} />
-      </main>
-
       {/* Sidebar */}
       <Sidebar isCollapsed={isSidebarCollapsed} toggleSidebar={toggleSidebar} />
+
+      {/* Main content + Botbar */}
+      <div className="flex flex-col w-full h-full">
+        <Botbar toggleSidebar={toggleSidebar} />
+        <main className="bg-gray-50 transition-all duration-300 overflow-y-auto">
+                    {children}
+        </main>
+      </div>
     </div>
   );
 };
 
-const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-      <DashboardLayout>{children}</DashboardLayout>
-  );
-};
-
-export default DashboardWrapper;
+export default DashboardLayout;
