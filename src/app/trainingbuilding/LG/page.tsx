@@ -18,7 +18,7 @@ const LowerGround = () => {
         {/* LG-Classroom-1 */}
         <Link
           href="/trainingbuilding/LG/classroom1"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -36,7 +36,7 @@ const LowerGround = () => {
         {/* LG-Classroom-2 */}
         <Link
           href="/trainingbuilding/LG/classroom2"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -54,7 +54,7 @@ const LowerGround = () => {
         {/* LG-Classroom-3 */}
         <Link
           href="/trainingbuilding/LG/classroom3"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image

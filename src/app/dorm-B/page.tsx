@@ -18,7 +18,7 @@ const DORMB = () => {
         {/* Type A Button */}
         <Link
           href="/dorm-B/Type-A"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -36,7 +36,7 @@ const DORMB = () => {
         {/* Type B Button */}
         <Link
           href="/dorm-B/Type-B"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -54,7 +54,7 @@ const DORMB = () => {
         {/* Type C Button */}
         <Link
           href="/dorm-B/Type-C"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -72,7 +72,7 @@ const DORMB = () => {
         {/* Pool Button */}
         <Link
           href="/dorm-B/swimmingPool"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image

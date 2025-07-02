@@ -18,7 +18,7 @@ const GroundFloor = () => {
         {/* Front Office */}
         <Link
           href="/trainingbuilding/GF/frontoffice"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -36,7 +36,7 @@ const GroundFloor = () => {
         {/* GF-Classroom-1 */}
         <Link
           href="/trainingbuilding/GF/classroom1"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+            className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -54,7 +54,7 @@ const GroundFloor = () => {
         {/* GF-Classroom-2 */}
         <Link
           href="/trainingbuilding/GF/classroom2"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -72,7 +72,7 @@ const GroundFloor = () => {
         {/* GF-Classroom-3 */}
         <Link
           href="/trainingbuilding/GF/classroom3"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -90,7 +90,7 @@ const GroundFloor = () => {
         {/* Teacher Room */}
         <Link
           href="/trainingbuilding/GF/teacherRoom"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image

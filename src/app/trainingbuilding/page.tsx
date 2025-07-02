@@ -1,7 +1,4 @@
 'use client';
-
-// import { useInactivityTimer } from "@/app/components/Timer";
-// import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +13,7 @@ const TrainingBuilding = () => {
       </h1>
 
       {/* Buttons */}
-      <div className="grid grid-cols-2 gap-6 w-full max-w-5xl mx-auto">
+      <div className="grid grid-cols-2 gap-6 ">
         {/* LG Button */}
         <Link
           href="/trainingbuilding/LG"
