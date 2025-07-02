@@ -193,7 +193,6 @@ const Dashboard = () => {
 
       {/* Map Legend */}
       <div className="w-full md:w-1/5 bg-white px-4 py-6">
-
         <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4 text-left">
           Map Legend
         </h2>
