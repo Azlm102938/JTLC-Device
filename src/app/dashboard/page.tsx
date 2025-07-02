@@ -4,7 +4,6 @@ import { MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "../components/Navbar";
 
 // Place coordinates and keys must match placeDetails
 const places = [

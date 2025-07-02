@@ -1,9 +1,9 @@
 'use client';
 
-import { useInactivityTimer } from "@/app/components/Timer";
-import { ArrowLeft } from "lucide-react";
+// import { useInactivityTimer } from "@/app/components/Timer";
+// import { ArrowLeft } from "lucide-react";
+// import Link from "next/link";
 import Image from "next/image";
-import Link from "next/link";
 
 const UGClassroom4 = () => {
   // useInactivityTimer();

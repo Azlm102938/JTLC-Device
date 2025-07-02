@@ -1,7 +1,7 @@
 'use client';
 
-import { useInactivityTimer } from "@/app/components/Timer";
-import { ArrowLeft } from "lucide-react";
+// import { useInactivityTimer } from "@/app/components/Timer";
+// import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

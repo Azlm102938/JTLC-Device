@@ -1,8 +1,8 @@
 'use client';
 
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
-import { useInactivityTimer } from "@/app/components/Timer";
+// import Link from "next/link";
+// import { ArrowLeft } from "lucide-react";
+// import { useInactivityTimer } from "@/app/components/Timer";
 
 type Props = {
   title?: string;

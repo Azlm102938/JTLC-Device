@@ -1,9 +1,9 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
-import { useInactivityTimer } from "../components/Timer";
+// import Link from "next/link";
+// import { ArrowLeft } from "lucide-react";
+// import { useInactivityTimer } from "../components/Timer";
 
 const CourtYard = () => {
   // useInactivityTimer();
