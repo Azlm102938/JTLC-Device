@@ -16,11 +16,11 @@ const TrainingBuilding = () => {
       </h1>
 
       {/* Buttons */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-6 w-full max-w-5xl mx-auto">
         {/* LG Button */}
         <Link
           href="/trainingbuilding/LG"
-          className="w-full h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+           className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -38,7 +38,7 @@ const TrainingBuilding = () => {
         {/* GF Button */}
         <Link
           href="/trainingbuilding/GF"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -56,7 +56,7 @@ const TrainingBuilding = () => {
         {/* UG Button */}
         <Link
           href="/trainingbuilding/UG"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -74,7 +74,7 @@ const TrainingBuilding = () => {
         {/* Auditorium Button */}
         <Link
           href="/trainingbuilding/auditorium"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
@@ -92,7 +92,7 @@ const TrainingBuilding = () => {
         {/* Amphitheater Button */}
         <Link
           href="/trainingbuilding/amphitheater"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full aspect-[5/6] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
