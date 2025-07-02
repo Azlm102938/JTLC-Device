@@ -20,7 +20,7 @@ const TrainingBuilding = () => {
         {/* LG Button */}
         <Link
           href="/trainingbuilding/LG"
-          className="w-[250px] h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
+          className="w-full h-[300px] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition group"
         >
           <div className="relative w-full h-4/5">
             <Image
