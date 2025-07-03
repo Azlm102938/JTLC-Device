@@ -20,7 +20,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
       <div className="flex flex-col w-full h-full">
         <Botbar toggleSidebar={toggleSidebar} />
         <main className="bg-gray-50 transition-all duration-300 overflow-y-auto">
-                    {children}
+          {children}
         </main>
       </div>
     </div>

@@ -4,14 +4,20 @@
 // import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import BackButton from "@/app/components/backButton";
 
 const UpperGround = () => {
   // useInactivityTimer();
   
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
-      {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">UPPER GROUND</h1>
+      {/* Back Button */}
+      <div className="relative w-full flex items-center mb-6">
+      <BackButton href="/trainingbuilding/UG"/>
+        <h1 className="mx-auto text-3xl font-bold text-gray-900">
+          UG - CLASSROOM 4
+        </h1>
+      </div>
 
       {/* Buttons */}
       <div className="grid grid-cols-2 gap-6">

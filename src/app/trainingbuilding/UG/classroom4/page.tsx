@@ -1,9 +1,8 @@
 'use client';
 
 // import { useInactivityTimer } from "@/app/components/Timer";
-// import { ArrowLeft } from "lucide-react";
-// import Link from "next/link";
 import Image from "next/image";
+import BackButton from "@/app/components/backButton";
 
 const UGClassroom4 = () => {
   // useInactivityTimer();
@@ -11,19 +10,12 @@ const UGClassroom4 = () => {
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
-      {/* <div className="absolute bottom-150 left-6  flex flex-col items-center text-black group">
-        <Link href="/trainingbuilding/UG" className="flex flex-col items-center">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-        <span className="text-sm font-semibold">Back</span>
-      </div> */}
-
-      {/* Page Title */}
-      <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-        UG CLASSROOM 4
-      </h1>
+      <div className="relative w-full flex items-center mb-6">
+      <BackButton href="/trainingbuilding/LG"/>
+        <h1 className="mx-auto text-3xl font-bold text-gray-900">
+          UG - CLASSROOM 4
+        </h1>
+      </div>
 
       {/* Image */}
       <Image 

@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-interface BackButtonProps {
+interface BackButtonBProps {
   href?: string;
 }
 
-const BackButton = ({ 
-  href = "/dashboard", 
-}: BackButtonProps) => {
+const BackButtonB = ({ 
+  href = "/dorm-B", 
+}: BackButtonBProps) => {
   return (
     <div className="absolute left-0">
       <Link href={href} className="flex items-center text-black group">
@@ -21,4 +21,4 @@ const BackButton = ({
   );
 };
 
-export default BackButton;
+export default BackButtonB;

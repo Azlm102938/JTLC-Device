@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export function useInactivityTimer(
   redirectTo: string = "/dashboard",
-  timeoutMs: number = 30000 // 100 seconds
+  timeoutMs: number = 300000 // 300 secs (5 minutes)
 ) {
   const router = useRouter();
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);

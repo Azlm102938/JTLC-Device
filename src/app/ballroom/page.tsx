@@ -1,29 +1,21 @@
 'use client';
 
 import Image from "next/image";
-// import Link from "next/link";
-// import { ArrowLeft } from "lucide-react";
-// import { useInactivityTimer } from "@/app/components/Timer";
+import { useInactivityTimer } from "@/app/components/Timer";
+import BackButton from "../components/backButton";
 
 const Ballroom = () => {
   // useInactivityTimer();
 
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
-      {/* Back Button */}
-      {/* <div className="absolute bottom-150 left-10  flex flex-col items-center text-black group">
-        <Link href="/dashboard" className="flex flex-col items-center">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-        <span className="text-sm font-semibold">Back</span>
-      </div> */}
-
-      {/* Page Title */}
-      <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-        BALLROOM
-      </h1>
+      {/* Header with back button and title */}
+      <div className="relative w-full flex items-center mb-6">
+      <BackButton href="/dashboard"/>
+        <h1 className="mx-auto text-3xl font-bold text-gray-900">
+          BALLROOM
+        </h1>
+      </div>
 
       {/* Image */}
       <Image 
@@ -36,9 +28,9 @@ const Ballroom = () => {
 
       {/* Description */}
       <p className="text-center text-gray-700 max-w-2xl leading-relaxed">
-         The ballroom at JTLC is a spacious and elegant venue designed for events, ceremonies, and large gatherings. 
-         It&apos;s equipped to host formal occasions, conferences, and celebrations, providing a versatile environment for memorable experiences.
-        </p>
+        The ballroom at JTLC is a spacious and elegant venue designed for events, ceremonies, and large gatherings. 
+        It&apos;s equipped to host formal occasions, conferences, and celebrations, providing a versatile environment for memorable experiences.
+      </p>
     </div>
   );
 };

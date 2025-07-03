@@ -1,29 +1,21 @@
 'use client';
 
 import Image from "next/image";
-// import Link from "next/link";
-// import { ArrowLeft } from "lucide-react";
+import BackButton from "../components/backButton";
 import { useInactivityTimer } from "../components/Timer";
 
 const Cafetaria = () => {
-    useInactivityTimer();
+    // useInactivityTimer();
      
   return (
     <div className="min-h-screen bg-white px-4 pt-6 pb-12 flex flex-col items-center relative">
       {/* Back Button */}
-      {/* <div className="absolute bottom-150 left-10  flex flex-col items-center text-black group">
-        <Link href="/dashboard" className="flex flex-col items-center">
-          <div className="p-2 rounded-full transition-colors duration-200 group-hover:bg-gray-200">
-            <ArrowLeft className="w-6 h-6" />
-          </div>
-        </Link>
-        <span className="text-sm font-semibold">Back</span>
-      </div> */}
-
-      {/* Page Title */}
-      <h1 className="text-3xl font-bold text-gray-900 text-center mb-6">
-        CAFETARIA
-      </h1>
+      <div className="relative w-full flex items-center mb-6">
+      <BackButton href="/dashboard"/>
+        <h1 className="mx-auto text-3xl font-bold text-gray-900">
+          CAFETARIA
+        </h1>
+      </div>
 
       {/* Image */}
       <Image 
