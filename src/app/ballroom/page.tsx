@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { useInactivityTimer } from "@/app/components/Timer";
+// import { useInactivityTimer } from "@/app/components/Timer";
 import BackButton from "../components/backButton";
 
 const Ballroom = () => {

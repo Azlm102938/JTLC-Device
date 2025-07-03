@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import BackButton from "../components/backButton";
-import { useInactivityTimer } from "../components/Timer";
+// import { useInactivityTimer } from "../components/Timer";
 
 const Cafetaria = () => {
     // useInactivityTimer();
