@@ -157,11 +157,11 @@ const Dashboard = () => {
                   <img
                     src={placeDetails[selectedPlace].image}
                     alt={placeDetails[selectedPlace].name}
-                    className="w-full h-32 object-cover rounded"
+                    className="w-full h-32 object-cover rounded gap-2 mb-4"
                   />
                 )}
 
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col">
                   {selectedPlace !== "lobby" && (
                   <button
                     className="bg-white text-black font-semibold px-4 py-2 rounded"
